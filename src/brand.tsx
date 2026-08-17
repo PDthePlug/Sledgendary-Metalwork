@@ -1,0 +1,5 @@
+export const PUBLIC_PHONE_DISPLAY='+27 77 469 6343';
+export const PUBLIC_PHONE_E164='+27774696343';
+export const PUBLIC_WHATSAPP_NUMBER='27774696343';
+
+export function HammerMark(){return <svg className='hammer-mark' viewBox='0 0 72 72' role='img' aria-label='Sledgendary sledgehammer mark'><defs><linearGradient id='steel-mark' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stopColor='#f5f6f4'/><stop offset='.25' stopColor='#8d9291'/><stop offset='.53' stopColor='#dce0dd'/><stop offset='1' stopColor='#505655'/></linearGradient><linearGradient id='handle-mark' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stopColor='#9a704e'/><stop offset='.55' stopColor='#4d3526'/><stop offset='1' stopColor='#171311'/></linearGradient></defs><g transform='rotate(-38 36 36)'><rect x='31' y='23' width='10' height='42' rx='2' fill='url(#handle-mark)'/><rect x='7' y='10' width='58' height='23' rx='5' fill='url(#steel-mark)'/><path d='M18 10v23M54 10v23' stroke='rgba(0,0,0,.28)' strokeWidth='1.3'/><path d='M31 23h10' stroke='#191919' strokeWidth='2'/></g></svg>}

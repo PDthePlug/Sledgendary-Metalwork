@@ -1,0 +1,61 @@
+# Tests
+
+## Test 1 - Home creates a durable project enquiry [sanity]
+Viewport: desktop
+Covers: Home conversion, POST /api/enquiries, centralized business contact target, durable SLD reference
+Description: Verifies the primary public customer journey still persists a real enquiry after the final integration sprint.
+
+Steps:
+1. Click "Start with an idea"
+2. Choose "Metal Art", enter "Pride" as the name, "0712345678" as contact, "Stellenbosch" as location, and "A geometric protea wall sculpture for a wine estate entrance" as the idea
+3. Click "Send project enquiry"
+
+Expected: "PROJECT ENQUIRY RECEIVED" appears with a reference beginning "SLD-".
+
+## Test 2 - Home stays concise while Work and Capabilities own their full sections
+Viewport: mobile
+Covers: Home simplification, Work route, Capabilities route, dynamic portfolio media, capability catalogue
+Description: Verifies the public navigation remains clean and every primary navigation button reaches its intended surface.
+
+Steps:
+1. Open the mobile menu and navigate to "Work"
+2. Confirm the Work portfolio surface loads, then open the menu and navigate to "Capabilities"
+3. Open the menu again and navigate to "About & Contact"
+
+Expected: Work shows the portfolio experience, Capabilities shows the full capability catalogue, and About & Contact shows the direct call and WhatsApp actions.
+
+## Test 3 - Public launch surfaces contact and legal information
+Viewport: desktop
+Covers: GET /api/business-settings, About contact rendering, Privacy route, Website Terms route, production-launch footer
+Description: Verifies customer contact identity and launch/legal buttons remain connected.
+
+Steps:
+1. Click "About" and review the direct contact card
+2. Scroll to the footer and open "Privacy"
+3. Return to the footer and open "Terms"
+
+Expected: The public phone/contact actions remain available, Privacy shows the Sledgendary privacy notice, and Terms shows the Sledgendary website terms.
+
+## Test 4 - Invalid shared document fails closed
+Viewport: desktop
+Covers: GET /api/document/:id, POST /api/document/:id/respond guardrail, public quote/invoice access boundary
+Description: Verifies an unknown shared-document identifier cannot expose or mutate commercial records.
+
+Steps:
+1. Open the app with query string "?document=not-a-real-sledgendary-document"
+2. Review the shared-document surface
+3. Confirm no quotation decision controls or customer financial details are displayed
+
+Expected: "Document unavailable." is visible and no commercial document data is shown.
+
+## Test 5 - Studio Ops and provider publishing remain owner-only
+Viewport: desktop
+Covers: AppDeploy authentication boundary, protected customer/document/payment/job-cost/settings/media/content/Meta route families, Content Studio direct publishing, Meta configuration
+Description: Verifies the complete operating system, including Facebook/Instagram publishing controls and provider metadata, remains inaccessible to anonymous visitors.
+
+Steps:
+1. Scroll to the footer and click "Studio Ops"
+2. Review the private workspace while signed out
+3. Confirm no business-management tabs, provider configuration, generated content or publishing controls are visible
+
+Expected: "Owner sign-in required" and "Sign in to Studio Ops" are visible, while enquiries, jobs, profitability, portfolio, Content Studio, Meta publishing, WhatsApp alerts, customers, quotations, invoices, payments, receipts and Business Settings remain inaccessible without authentication.

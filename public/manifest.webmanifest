@@ -1,0 +1,41 @@
+{
+  "name": "Sledgendary Metalwork & Fabrication Studio",
+  "short_name": "Sledgendary",
+  "description": "Bespoke metalwork, fabrication and Studio Ops.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f1eb",
+  "theme_color": "#f4f1eb",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "./sledgendary-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Work",
+      "short_name": "Work",
+      "url": "./#work"
+    },
+    {
+      "name": "Capabilities",
+      "short_name": "Capabilities",
+      "url": "./#capabilities"
+    },
+    {
+      "name": "About & Contact",
+      "short_name": "Contact",
+      "url": "./#about"
+    }
+  ]
+}

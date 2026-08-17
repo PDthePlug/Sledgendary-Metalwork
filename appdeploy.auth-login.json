@@ -1,0 +1,15 @@
+{
+  "headline": "Sledgendary Studio Ops",
+  "subtitle": "Private workspace for Sledgendary enquiries, projects, portfolio and studio operations.",
+  "style": {
+    "mode": "light",
+    "accentColor": "#d77f40",
+    "backgroundColor": "#f4f1eb",
+    "panelColor": "#ffffff",
+    "textColor": "#171717",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "borderRadius": 18
+  },
+  "termsUrl": "public/resources/website-terms.html",
+  "privacyUrl": "public/resources/privacy-notice.html"
+}
