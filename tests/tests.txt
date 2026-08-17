@@ -1,0 +1,49 @@
+# Tests
+
+## Test 1 - Prepare a project brief from the hero [sanity]
+Viewport: desktop
+Covers: primary Start a Project workflow, project-type selection, project brief generation
+Description: Verifies the main conversion flow turns a customer's idea into a visible structured project brief.
+
+Steps:
+1. Click "Start a Project" in the hero
+2. Select "Furniture", enter "A steel and glass coffee table for a coastal apartment" in the idea field, enter "Cape Town" as the location, and enter "client@example.com" as the contact
+3. Click "Prepare project brief"
+
+Expected: A visible "Your project brief is ready." state appears and the brief contains Furniture, the entered idea, Cape Town, and client@example.com.
+
+## Test 2 - Reject an underspecified project idea
+Viewport: desktop
+Covers: required project-detail validation, invalid brief guardrail
+Description: Verifies the brief builder does not proceed when the project idea is too short to be useful.
+
+Steps:
+1. Open "Start a Project"
+2. Enter "Gate" in the idea field
+3. Click "Prepare project brief"
+
+Expected: The message "Tell us a little more about what you want to create." is visible and no prepared brief is shown.
+
+## Test 3 - Explore work from the hero
+Viewport: desktop
+Covers: hero secondary navigation, selected-work section discovery
+Description: Verifies a visitor can move from the landing hero into the studio portfolio direction without leaving the page.
+
+Steps:
+1. Click "Explore the work"
+2. Observe the destination section
+3. Locate the first project card
+
+Expected: The "SELECTED WORK" section is visible and the project "The Lion" is present.
+
+## Test 4 - Use mobile navigation to reach capabilities
+Viewport: mobile
+Covers: responsive mobile menu, capabilities navigation, mobile interaction
+Description: Verifies the condensed navigation exposes the studio capabilities on a mobile viewport.
+
+Steps:
+1. Open the mobile menu
+2. Click "Capabilities"
+3. Observe the destination section
+
+Expected: The "WHAT WE MAKE" section is visible and includes "Metal Art" and "Architecture".
